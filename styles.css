@@ -1,0 +1,266 @@
+/* Estiliza o corpo inteiro da página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #282828;
+}
+
+/* Estiliza a lista desordenada dentro do elemento com ID 'menu' */
+#menu ul {
+  background-color: #282828;
+  color: white;
+  list-style: none;
+  overflow: hidden;
+}
+
+/* Estiliza cada item de lista dentro da lista desordenada no ID 'menu' */
+#menu ul li {
+  float: left;
+  display: inline;
+  padding: 14px 16px;
+}
+
+/* Modifica o estilo dos itens da lista para telas menores */
+@media screen and (max-width: 600px) {
+  #menu ul li {
+    float: none;
+    display: block;
+  }
+}
+
+/* Estiliza o elemento com o ID 'cabecalho' */
+#cabecalho {
+  background: url('https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estiliza o h1 dentro de .texto-cabecalho */
+.texto-cabecalho h1 {
+  font-size: 4em;
+  margin: 0;
+}
+
+/* Estiliza o parágrafo dentro de .texto-cabecalho */
+.texto-cabecalho p {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* Estiliza a classe .texto-cabecalho */
+.texto-cabecalho {
+  text-shadow: 2px 2px 4px #000000;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Estiliza o ID 'menu' */
+#menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+/* Reestiliza a lista desordenada dentro de #menu */
+#menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estiliza os links dentro dos itens da lista em #menu */
+#menu ul li a {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 12px;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+
+/* Adiciona efeito de hover aos links em #menu */
+#menu ul li a:hover {
+  background-color: #45a049;
+}
+
+/* Estiliza o container padrão */
+.container {
+  margin: 80px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+}
+
+/* Estiliza o container da seção "sobre" */
+.container-sobre {
+  margin: 80px auto;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 12px;
+  color: #ffffff;
+}
+
+/* Estiliza as tags h1 */
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Estiliza as tags de parágrafo */
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Estiliza a imagem de perfil */
+.profile-image img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+/* Estiliza o wrapper de imagens */
+.image-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Estiliza cada imagem dentro do .image-wrapper */
+.image-wrapper img {
+  margin: 10px;
+  width: calc(33% - 20px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20%;
+}
+
+/* Estiliza o cabeçalho da seção "habilidades" */
+.skills h2 {
+  margin-top: 40px;
+  font-size: 1.5em;
+}
+
+/* Estiliza a lista de habilidades */
+.skills ul {
+  list-style-type: square;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+/* Estiliza a seção "educação" */
+.education {
+  background-color: #fff;
+  color: #333;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 8px;
+}
+
+/* Estiliza as imagens dentro da seção "educação" */
+.education img {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10%;
+}
+
+/* Estiliza o cabeçalho h2 na seção "educação" */
+.education h2 {
+  font-size: 24px;
+}
+
+/* Estiliza o parágrafo na seção "educação" */
+.education p {
+  margin-top: 5px;
+}
+
+/* Estiliza os botões de navegação */
+.nav-button {
+  background-color: #333333;
+  color: white;
+  border: none;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 12px;
+}
+
+/* Estiliza a seção "projeto" */
+.project {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/* Estiliza o cabeçalho h2 na seção "projeto" */
+.project h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Estiliza o parágrafo na seção "projeto" */
+.project p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Estiliza o container de contato */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Estiliza o container de entrada de dados */
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Estiliza as tags de entrada */
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+input, textarea, button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 15px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
